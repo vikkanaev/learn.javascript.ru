@@ -5,3 +5,4 @@ env:
   browser: true
 rules:
   no-console: off
+  no-plusplus: off
