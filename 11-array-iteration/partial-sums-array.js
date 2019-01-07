@@ -5,28 +5,18 @@
  Функция не должна модифицировать входной массив.
  В решении используйте метод arr.reduce.
 */
-// var acc = [];
-
-
-function calcPartialSum(acc, item) {
-  let res;
-  let init;
-
-  if (!acc.length) {
-    init = acc;
-    res = item + init;
-    acc = [init];
-  } else {
-    res = item + acc[(acc.length - 1)];
-  }
-
-  acc.push(res);
-  return acc;
-}
 
 function getSums(arr) {
-  if (arr.length < 2) { return arr; }
-  return arr.reduce(calcPartialSum);
+  if (!arr.length) { return arr; }
+
+  const res = [];
+  const totalSum = arr.reduce((sum, item) => {
+    res.push(sum);
+    return sum + item;
+  });
+  res.push(totalSum);
+
+  return res;
 }
 
-console.log(getSums([])); // eslint-disable-line no-console
+console.log(getSums([1, 2, 3, 4, 5])); // eslint-disable-line no-console
