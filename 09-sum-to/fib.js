@@ -11,7 +11,7 @@ function fib(n) {
   let y = 0;
   let i;
 
-  for (i = 0; i < n; i++) { // eslint-disable-line no-plusplus
+  for (i = 0; i < n; i += 1) {
     x += y;
     y = x - y;
   }
