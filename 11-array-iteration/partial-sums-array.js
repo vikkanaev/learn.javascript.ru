@@ -19,4 +19,4 @@ function getSums(arr) {
   return res;
 }
 
-console.log(getSums([1, 2, 3, 4, 5])); // eslint-disable-line no-console
+console.log(getSums([1, 2, 3, 4, 5]));

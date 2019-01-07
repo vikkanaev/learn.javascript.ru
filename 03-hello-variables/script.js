@@ -3,4 +3,4 @@
 const name = 'Василий';
 const admin = name;
 
-console.log(admin); // eslint-disable-line no-console
+console.log(admin);
